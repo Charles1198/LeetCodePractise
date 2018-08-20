@@ -60,7 +60,12 @@ public class Main {
 
         StringCode stringCode = new StringCode();
 
-        print(stringCode.reverseString("A man, a plan, a canal: Panama"));
+//        print(stringCode.reverseString("A man, a plan, a canal: Panama"));
+
+//        print(stringCode.reverse(-2147483648));
+
+        print(stringCode.firstUniqChar("loveleetcode"));
+
 
     }
 

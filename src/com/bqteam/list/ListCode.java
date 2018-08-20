@@ -86,6 +86,19 @@ public class ListCode {
         return false;
     }
 
+    public int singleNumber(int[] nums) {
+        List<Integer> numList = new ArrayList<>();
+        for (int n: nums) {
+            numList.add(n);
+        }
+        for (int n: numList) {
+            if (numList.indexOf(n) == numList.lastIndexOf(n)) {
+                return n;
+            }
+        }
+        return -1;
+    }
+
     public int[] intersect(int[] nums1, int[] nums2) {
         List<Integer> resList = new ArrayList<>();
 
